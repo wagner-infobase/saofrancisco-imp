@@ -36,7 +36,7 @@ public class FieldLayoutDefault implements Serializable {
 	@Column(name="TIPO_CAMPO")
 	private String typeField;
 	
-	@Column(name="NUMERO_CAMPO")
+	@Column(name="TAMANHO_CAMPO")
 	private Long lengthField;
 
 	@Column(name="TIPO_INFORMACAO")
