@@ -19,104 +19,104 @@ public class ValidFieldLayout implements Serializable {
 	@SequenceGenerator(name="VALIDACAO_CAMPO_LAYOUT_CODVALIDACAOCAMPOLAYOUT_GENERATOR", sequenceName="SQ_VALIDACAO_CAMPO_LAYOUT")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="VALIDACAO_CAMPO_LAYOUT_CODVALIDACAOCAMPOLAYOUT_GENERATOR")
 	@Column(name="COD_VALIDACAO_CAMPO_LAYOUT")
-	private Long codValidacaoCampoLayout;
+	private Long codValidationFieldLayout;
 
 	@Column(name="CANCELAMENTO_DEPENDENTE")
-	private String cancelamentoDependente;
+	private String cancellationDependent;
 
 	@Column(name="CANCELAMENTO_TITULAR")
-	private String cancelamentoTitular;
+	private String cancellationHolder;
 
 	@Column(name="COD_CAMPO_LAYOUT_PADRAO")
-	private Long codCampoLayoutPadrao;
+	private Long codFieldLayoutDefault;
 
 	@Temporal(TemporalType.DATE)
 	@Column(name="DT_INATIVO")
-	private Date dtInativo;
+	private Date dtInactive;
 
 	@Temporal(TemporalType.DATE)
 	@Column(name="DT_INCLUSAO")
-	private Date dtInclusao;
+	private Date dtInclusion;
 
 	@Column(name="FL_STATUS")
 	private String flStatus;
 
 	@Column(name="INCLUSAO_DEPENDENTE")
-	private String inclusaoDependente;
+	private String inclusionDependent;
 
 	@Column(name="INCLUSAO_TITULAR")
-	private String inclusaoTitular;
+	private String inclusionHolder;
 
 	@Column(name="MUDANCACONTRATUAL_DEPENDENTE")
-	private String mudancacontratualDependente;
+	private String contractualChangeDependent;
 
 	@Column(name="MUDANCACONTRATUAL_TITULAR")
-	private String mudancacontratualTitular;
+	private String contractualChangeHolder;
 
 	@Column(name="REATIVACAO_DEPENDENTE")
-	private String reativacaoDependente;
+	private String reactivationDependent;
 
 	@Column(name="REATIVACAO_TITULAR")
-	private String reativacaoTitular;
+	private String reactivationHolder;
 
 	@Column(name="RETIFICACAO_CAMPO")
-	private Long retificacaoCampo;
+	private Long rectificationField;
 
 	@Column(name="RETIFICACAO_DEPENDENTE")
-	private String retificacaoDependente;
+	private String rectificationDependent;
 
 	@Column(name="RETIFICACAO_TITULAR")
-	private String retificacaoTitular;
+	private String rectificationHolder;
 
 	public ValidFieldLayout() {
 	}
 
-	public Long getCodValidacaoCampoLayout() {
-		return this.codValidacaoCampoLayout;
+	public Long getCodValidationFieldLayout() {
+		return this.codValidationFieldLayout;
 	}
 
-	public void setCodValidacaoCampoLayout(Long codValidacaoCampoLayout) {
-		this.codValidacaoCampoLayout = codValidacaoCampoLayout;
+	public void setCodValidationFieldLayout(Long codValidationFieldLayout) {
+		this.codValidationFieldLayout = codValidationFieldLayout;
 	}
 
-	public String getCancelamentoDependente() {
-		return this.cancelamentoDependente;
+	public String getCancellationDependent() {
+		return this.cancellationDependent;
 	}
 
-	public void setCancelamentoDependente(String cancelamentoDependente) {
-		this.cancelamentoDependente = cancelamentoDependente;
+	public void setCancellationDependent(String cancellationDependent) {
+		this.cancellationDependent = cancellationDependent;
 	}
 
-	public String getCancelamentoTitular() {
-		return this.cancelamentoTitular;
+	public String getCancellationHolder() {
+		return this.cancellationHolder;
 	}
 
-	public void setCancelamentoTitular(String cancelamentoTitular) {
-		this.cancelamentoTitular = cancelamentoTitular;
+	public void setCancellationHolder(String cancellationHolder) {
+		this.cancellationHolder = cancellationHolder;
 	}
 
-	public Long getCodCampoLayoutPadrao() {
-		return this.codCampoLayoutPadrao;
+	public Long getCodFieldLayoutDefault() {
+		return this.codFieldLayoutDefault;
 	}
 
-	public void setCodCampoLayoutPadrao(Long codCampoLayoutPadrao) {
-		this.codCampoLayoutPadrao = codCampoLayoutPadrao;
+	public void setCodFieldLayoutDefault(Long codFieldLayoutDefault) {
+		this.codFieldLayoutDefault = codFieldLayoutDefault;
 	}
 
-	public Date getDtInativo() {
-		return this.dtInativo;
+	public Date getDtInactive() {
+		return this.dtInactive;
 	}
 
-	public void setDtInativo(Date dtInativo) {
-		this.dtInativo = dtInativo;
+	public void setDtInactive(Date dtInactive) {
+		this.dtInactive = dtInactive;
 	}
 
-	public Date getDtInclusao() {
-		return this.dtInclusao;
+	public Date getDtInclusion() {
+		return this.dtInclusion;
 	}
 
-	public void setDtInclusao(Date dtInclusao) {
-		this.dtInclusao = dtInclusao;
+	public void setDtInclusion(Date dtInclusion) {
+		this.dtInclusion = dtInclusion;
 	}
 
 	public String getFlStatus() {
@@ -127,76 +127,76 @@ public class ValidFieldLayout implements Serializable {
 		this.flStatus = flStatus;
 	}
 
-	public String getInclusaoDependente() {
-		return this.inclusaoDependente;
+	public String getInclusionDependent() {
+		return this.inclusionDependent;
 	}
 
-	public void setInclusaoDependente(String inclusaoDependente) {
-		this.inclusaoDependente = inclusaoDependente;
+	public void setInclusionDependent(String inclusionDependent) {
+		this.inclusionDependent = inclusionDependent;
 	}
 
-	public String getInclusaoTitular() {
-		return this.inclusaoTitular;
+	public String getInclusionHolder() {
+		return this.inclusionHolder;
 	}
 
-	public void setInclusaoTitular(String inclusaoTitular) {
-		this.inclusaoTitular = inclusaoTitular;
+	public void setInclusionHolder(String inclusionHolder) {
+		this.inclusionHolder = inclusionHolder;
 	}
 
-	public String getMudancacontratualDependente() {
-		return this.mudancacontratualDependente;
+	public String getMudancacontratualDependent() {
+		return this.contractualChangeDependent;
 	}
 
-	public void setMudancacontratualDependente(String mudancacontratualDependente) {
-		this.mudancacontratualDependente = mudancacontratualDependente;
+	public void setMudancacontratualDependent(String contractualChangeDependent) {
+		this.contractualChangeDependent = contractualChangeDependent;
 	}
 
-	public String getMudancacontratualTitular() {
-		return this.mudancacontratualTitular;
+	public String getMudancacontratualHolder() {
+		return this.contractualChangeHolder;
 	}
 
-	public void setMudancacontratualTitular(String mudancacontratualTitular) {
-		this.mudancacontratualTitular = mudancacontratualTitular;
+	public void setMudancacontratualHolder(String contractualChangeHolder) {
+		this.contractualChangeHolder = contractualChangeHolder;
 	}
 
-	public String getReativacaoDependente() {
-		return this.reativacaoDependente;
+	public String getReativacaoDependent() {
+		return this.reactivationDependent;
 	}
 
-	public void setReativacaoDependente(String reativacaoDependente) {
-		this.reativacaoDependente = reativacaoDependente;
+	public void setReativacaoDependent(String reactivationDependent) {
+		this.reactivationDependent = reactivationDependent;
 	}
 
-	public String getReativacaoTitular() {
-		return this.reativacaoTitular;
+	public String getReativacaoHolder() {
+		return this.reactivationHolder;
 	}
 
-	public void setReativacaoTitular(String reativacaoTitular) {
-		this.reativacaoTitular = reativacaoTitular;
+	public void setReativacaoHolder(String reactivationHolder) {
+		this.reactivationHolder = reactivationHolder;
 	}
 
-	public Long getRetificacaoCampo() {
-		return this.retificacaoCampo;
+	public Long getRetificacaoField() {
+		return this.rectificationField;
 	}
 
-	public void setRetificacaoCampo(Long retificacaoCampo) {
-		this.retificacaoCampo = retificacaoCampo;
+	public void setRetificacaoField(Long rectificationField) {
+		this.rectificationField = rectificationField;
 	}
 
-	public String getRetificacaoDependente() {
-		return this.retificacaoDependente;
+	public String getRetificacaoDependent() {
+		return this.rectificationDependent;
 	}
 
-	public void setRetificacaoDependente(String retificacaoDependente) {
-		this.retificacaoDependente = retificacaoDependente;
+	public void setRetificacaoDependent(String rectificationDependent) {
+		this.rectificationDependent = rectificationDependent;
 	}
 
-	public String getRetificacaoTitular() {
-		return this.retificacaoTitular;
+	public String getRetificacaoHolder() {
+		return this.rectificationHolder;
 	}
 
-	public void setRetificacaoTitular(String retificacaoTitular) {
-		this.retificacaoTitular = retificacaoTitular;
+	public void setRetificacaoHolder(String rectificationHolder) {
+		this.rectificationHolder = rectificationHolder;
 	}
 
 }
