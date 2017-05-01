@@ -2,12 +2,12 @@ package br.com.druid.imp.domain;
 
 import java.util.List;
 
-public class ValidLayoutDefaultDTO {
+public class ValidationLayoutDefaultDTO {
 	
 	private Long codLayoutDefault;	
-	private List<ValidFieldLayoutDTO> validfieldlayout;
+	private List<RequiredFieldLayoutDTO> validfieldlayout;
 	
-	public ValidLayoutDefaultDTO(){}
+	public ValidationLayoutDefaultDTO(){}
 	
 	public Long getCodLayoutDefault() {
 		return codLayoutDefault;
@@ -15,10 +15,10 @@ public class ValidLayoutDefaultDTO {
 	public void setCodLayoutDefault(Long codLayoutDefault) {
 		this.codLayoutDefault = codLayoutDefault;
 	}
-	public List<ValidFieldLayoutDTO> getValidfieldlayout() {
+	public List<RequiredFieldLayoutDTO> getValidfieldlayout() {
 		return validfieldlayout;
 	}
-	public void setValidfieldlayout(List<ValidFieldLayoutDTO> validfieldlayout) {
+	public void setValidfieldlayout(List<RequiredFieldLayoutDTO> validfieldlayout) {
 		this.validfieldlayout = validfieldlayout;
 	}
 

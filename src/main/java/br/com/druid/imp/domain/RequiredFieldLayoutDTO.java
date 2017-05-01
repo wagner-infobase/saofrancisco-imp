@@ -1,6 +1,6 @@
 package br.com.druid.imp.domain;
 
-public class ValidFieldLayoutDTO {
+public class RequiredFieldLayoutDTO {
 		
 	private Long codValidationFieldLayout;		
 	private Long codFieldLayoutDefault;
@@ -16,7 +16,7 @@ public class ValidFieldLayoutDTO {
 	private String rectificationHolder;
 	private Long rectificationField;	
 	
-	public ValidFieldLayoutDTO(){}
+	public RequiredFieldLayoutDTO(){}
 
 	public Long getCodValidationFieldLayout() {
 		return codValidationFieldLayout;
