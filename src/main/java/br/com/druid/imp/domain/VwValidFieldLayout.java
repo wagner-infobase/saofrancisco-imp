@@ -21,10 +21,10 @@ public class VwValidFieldLayout implements Serializable {
 	private String active;
 
 	@Column(name="CAMPO_LAYOUT_ID")
-	private Long campoLayoutId;
+	private Long fieldLayoutId;
 
 	@Column(name="DESCRICAO_CAMPO")
-	private String descricaoCampo;
+	private String descriptionField;
 
 	@Id
 	private Long id;
@@ -33,43 +33,43 @@ public class VwValidFieldLayout implements Serializable {
 	private Long layoutId;
 
 	@Column(name="NOME_LAYOUT")
-	private String nomeLayout;
+	private String nameLayout;
 
 	@Column(name="NUMERO_CAMPO")
-	private Integer numeroCampo;
+	private Integer numberField;
 
 	@Column(name="VALIDA_DEPEN_CANCELAMENTO")
-	private String validaDepenCancelamento;
+	private String validDepenCancellation;
 
 	@Column(name="VALIDA_DEPEN_INCLUSAO")
-	private String validaDepenInclusao;
+	private String validDepenInclusion;
 
 	@Column(name="VALIDA_DEPEN_MUDANCACONTRATUAL")
-	private String validaDepenMudancacontratual;
+	private String validDepenContractualChange;
 
 	@Column(name="VALIDA_DEPEN_REATIVACAO")
-	private String validaDepenReativacao;
+	private String validDepenReactivation;
 
 	@Column(name="VALIDA_DEPEN_RETIFICACAO")
-	private String validaDepenRetificacao;
+	private String validDepenRectification;
 
 	@Column(name="VALIDA_TIT_CANCELAMENTO")
-	private String validaTitCancelamento;
+	private String validHolderCancellation;
 
 	@Column(name="VALIDA_TIT_INCLUSAO")
-	private String validaTitInclusao;
+	private String validHolderInclusion;
 
 	@Column(name="VALIDA_TIT_MUDANCACONTRATUAL")
-	private String validaTitMudancacontratual;
+	private String validHolderContractualChange;
 
 	@Column(name="VALIDA_TIT_REATIVACAO")
-	private String validaTitReativacao;
+	private String validHolderReactivation;
 
 	@Column(name="VALIDA_TIT_RETIFICACAO")
-	private String validaTitRetificacao;
+	private String validHolderRectification;
 
 	@Column(name="VALIDACAO_CAMPO_ID")
-	private Long validacaoCampoId;
+	private Long validFieldId;
 
 	public VwValidFieldLayout() {
 	}
@@ -82,20 +82,20 @@ public class VwValidFieldLayout implements Serializable {
 		this.active = active;
 	}
 
-	public Long getCampoLayoutId() {
-		return this.campoLayoutId;
+	public Long getFieldLayoutId() {
+		return this.fieldLayoutId;
 	}
 
-	public void setCampoLayoutId(Long campoLayoutId) {
-		this.campoLayoutId = campoLayoutId;
+	public void setFieldLayoutId(Long fieldLayoutId) {
+		this.fieldLayoutId = fieldLayoutId;
 	}
 
-	public String getDescricaoCampo() {
-		return this.descricaoCampo;
+	public String getDescriptionField() {
+		return this.descriptionField;
 	}
 
-	public void setDescricaoCampo(String descricaoCampo) {
-		this.descricaoCampo = descricaoCampo;
+	public void setDescriptionField(String descriptionField) {
+		this.descriptionField = descriptionField;
 	}
 
 	public Long getId() {
@@ -114,108 +114,108 @@ public class VwValidFieldLayout implements Serializable {
 		this.layoutId = layoutId;
 	}
 
-	public String getNomeLayout() {
-		return this.nomeLayout;
+	public String getNameLayout() {
+		return this.nameLayout;
 	}
 
-	public void setNomeLayout(String nomeLayout) {
-		this.nomeLayout = nomeLayout;
+	public void setNameLayout(String nameLayout) {
+		this.nameLayout = nameLayout;
 	}
 
-	public Integer getNumeroCampo() {
-		return this.numeroCampo;
+	public Integer getNumberField() {
+		return this.numberField;
 	}
 
-	public void setNumeroCampo(Integer numeroCampo) {
-		this.numeroCampo = numeroCampo;
+	public void setNumberField(Integer numberField) {
+		this.numberField = numberField;
 	}
 
-	public String getValidaDepenCancelamento() {
-		return this.validaDepenCancelamento;
+	public String getvalidDepenCancellation() {
+		return this.validDepenCancellation;
 	}
 
-	public void setValidaDepenCancelamento(String validaDepenCancelamento) {
-		this.validaDepenCancelamento = validaDepenCancelamento;
+	public void setvalidDepenCancellation(String validDepenCancellation) {
+		this.validDepenCancellation = validDepenCancellation;
 	}
 
-	public String getValidaDepenInclusao() {
-		return this.validaDepenInclusao;
+	public String getvalidDepenInclusion() {
+		return this.validDepenInclusion;
 	}
 
-	public void setValidaDepenInclusao(String validaDepenInclusao) {
-		this.validaDepenInclusao = validaDepenInclusao;
+	public void setvalidDepenInclusion(String validDepenInclusion) {
+		this.validDepenInclusion = validDepenInclusion;
 	}
 
-	public String getValidaDepenMudancacontratual() {
-		return this.validaDepenMudancacontratual;
+	public String getvalidDepenContractualChange() {
+		return this.validDepenContractualChange;
 	}
 
-	public void setValidaDepenMudancacontratual(String validaDepenMudancacontratual) {
-		this.validaDepenMudancacontratual = validaDepenMudancacontratual;
+	public void setvalidDepenContractualChange(String validDepenContractualChange) {
+		this.validDepenContractualChange = validDepenContractualChange;
 	}
 
-	public String getValidaDepenReativacao() {
-		return this.validaDepenReativacao;
+	public String getvalidDepenReactivation() {
+		return this.validDepenReactivation;
 	}
 
-	public void setValidaDepenReativacao(String validaDepenReativacao) {
-		this.validaDepenReativacao = validaDepenReativacao;
+	public void setvalidDepenReactivation(String validDepenReactivation) {
+		this.validDepenReactivation = validDepenReactivation;
 	}
 
-	public String getValidaDepenRetificacao() {
-		return this.validaDepenRetificacao;
+	public String getvalidDepenRectification() {
+		return this.validDepenRectification;
 	}
 
-	public void setValidaDepenRetificacao(String validaDepenRetificacao) {
-		this.validaDepenRetificacao = validaDepenRetificacao;
+	public void setvalidDepenRectification(String validDepenRectification) {
+		this.validDepenRectification = validDepenRectification;
 	}
 
-	public String getValidaTitCancelamento() {
-		return this.validaTitCancelamento;
+	public String getvalidHolderCancellation() {
+		return this.validHolderCancellation;
 	}
 
-	public void setValidaTitCancelamento(String validaTitCancelamento) {
-		this.validaTitCancelamento = validaTitCancelamento;
+	public void setvalidHolderCancellation(String validHolderCancellation) {
+		this.validHolderCancellation = validHolderCancellation;
 	}
 
-	public String getValidaTitInclusao() {
-		return this.validaTitInclusao;
+	public String getvalidHolderInclusion() {
+		return this.validHolderInclusion;
 	}
 
-	public void setValidaTitInclusao(String validaTitInclusao) {
-		this.validaTitInclusao = validaTitInclusao;
+	public void setvalidHolderInclusion(String validHolderInclusion) {
+		this.validHolderInclusion = validHolderInclusion;
 	}
 
-	public String getValidaTitMudancacontratual() {
-		return this.validaTitMudancacontratual;
+	public String getvalidHolderContractualChange() {
+		return this.validHolderContractualChange;
 	}
 
-	public void setValidaTitMudancacontratual(String validaTitMudancacontratual) {
-		this.validaTitMudancacontratual = validaTitMudancacontratual;
+	public void setvalidHolderContractualChange(String validHolderContractualChange) {
+		this.validHolderContractualChange = validHolderContractualChange;
 	}
 
-	public String getValidaTitReativacao() {
-		return this.validaTitReativacao;
+	public String getvalidHolderReactivation() {
+		return this.validHolderReactivation;
 	}
 
-	public void setValidaTitReativacao(String validaTitReativacao) {
-		this.validaTitReativacao = validaTitReativacao;
+	public void setvalidHolderReactivation(String validHolderReactivation) {
+		this.validHolderReactivation = validHolderReactivation;
 	}
 
-	public String getValidaTitRetificacao() {
-		return this.validaTitRetificacao;
+	public String getvalidHolderRectification() {
+		return this.validHolderRectification;
 	}
 
-	public void setValidaTitRetificacao(String validaTitRetificacao) {
-		this.validaTitRetificacao = validaTitRetificacao;
+	public void setvalidHolderRectification(String validHolderRectification) {
+		this.validHolderRectification = validHolderRectification;
 	}
 
-	public Long getValidacaoCampoId() {
-		return this.validacaoCampoId;
+	public Long getValidFieldId() {
+		return this.validFieldId;
 	}
 
-	public void setValidacaoCampoId(Long validacaoCampoId) {
-		this.validacaoCampoId = validacaoCampoId;
+	public void setValidFieldId(Long validFieldId) {
+		this.validFieldId = validFieldId;
 	}
 
 }
