@@ -15,13 +15,13 @@ public interface VwValidFieldLayoutRepository extends PagingAndSortingRepository
 	@Query("select vc from VwValidFieldLayout vc "
 			+ " where ( ?1 is null or vc.layoutId = ?1 ) and "
 			+ " ( ?2 is null or vc.fieldLayoutId = ?2 ) and "
-			+ " ( ?3 is null or vc.validFieldId = ?3 ) and "
+			+ " ( ?3 is null or vc.validationFieldId = ?3 ) and "
 			+ " ( ?4 is null or vc.nameLayout  like CONCAT('%',?4,'%') ) and"
 			+ " ( ?5 is null or vc.descriptionField  like CONCAT('%',?5,'%') ) and"
 			+ " ( ?6 is null or vc.numberField  like CONCAT('%',?6,'%') )")	
 	Page<VwValidFieldLayout> findByFilters(@Param("layoutId") Long layoutId,
 			@Param("fieldLayoutId") Long fieldLayoutId,
-			@Param("validFieldId") Long validFieldId,
+			@Param("validationFieldId") Long validationFieldId,
 			@Param("nameLayout") String nameLayout,
 			@Param("descriptionField") String descriptionField,
 			@Param("numberField") Integer numberField,
