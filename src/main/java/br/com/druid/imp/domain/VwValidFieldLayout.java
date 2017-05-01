@@ -69,7 +69,7 @@ public class VwValidFieldLayout implements Serializable {
 	private String validHolderRectification;
 
 	@Column(name="VALIDACAO_CAMPO_ID")
-	private Long validFieldId;
+	private Long validationFieldId;
 
 	public VwValidFieldLayout() {
 	}
@@ -210,12 +210,12 @@ public class VwValidFieldLayout implements Serializable {
 		this.validHolderRectification = validHolderRectification;
 	}
 
-	public Long getValidFieldId() {
-		return this.validFieldId;
+	public Long getValidationFieldId() {
+		return this.validationFieldId;
 	}
 
-	public void setValidFieldId(Long validFieldId) {
-		this.validFieldId = validFieldId;
+	public void setValidationFieldId(Long validationFieldId) {
+		this.validationFieldId = validationFieldId;
 	}
 
 }
