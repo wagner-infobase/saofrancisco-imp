@@ -10,16 +10,16 @@ import java.util.Date;
  * 
  */
 @Entity
-@Table(name="VALIDACAO_CAMPO_LAYOUT")
-@NamedQuery(name="ValidFieldLayout.findAll", query="SELECT v FROM ValidFieldLayout v")
-public class ValidFieldLayout implements Serializable {
+@Table(name="OBRIGATORIO_CAMPO_LAYOUT")
+@NamedQuery(name="RequiredFieldLayout.findAll", query="SELECT v FROM RequiredFieldLayout v")
+public class RequiredFieldLayout implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="VALIDACAO_CAMPO_LAYOUT_CODVALIDACAOCAMPOLAYOUT_GENERATOR", sequenceName="SQ_VALIDACAO_CAMPO_LAYOUT")
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="VALIDACAO_CAMPO_LAYOUT_CODVALIDACAOCAMPOLAYOUT_GENERATOR")
-	@Column(name="COD_VALIDACAO_CAMPO_LAYOUT")
-	private Long codValidationFieldLayout;
+	@SequenceGenerator(name="OBRIGATORIO_CAMPO_LAYOUT_CODOBRIGATORIOCAMPOLAYOUT_GENERATOR", sequenceName="SQ_OBRIGATORIO_CAMPO_LAYOUT")
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="OBRIGATORIO_CAMPO_LAYOUT_CODOBRIGATORIOCAMPOLAYOUT_GENERATOR")
+	@Column(name="COD_OBRIGATORIO_CAMPO_LAYOUT")
+	private Long codRequiredFieldLayout;
 
 	@Column(name="CANCELAMENTO_DEPENDENTE")
 	private String cancellationDependent;
@@ -68,15 +68,15 @@ public class ValidFieldLayout implements Serializable {
 	@Column(name="RETIFICACAO_TITULAR")
 	private String rectificationHolder;
 
-	public ValidFieldLayout() {
+	public RequiredFieldLayout() {
 	}
 
-	public Long getCodValidationFieldLayout() {
-		return this.codValidationFieldLayout;
+	public Long getCodRequiredFieldLayout() {
+		return this.codRequiredFieldLayout;
 	}
 
-	public void setCodValidationFieldLayout(Long codValidationFieldLayout) {
-		this.codValidationFieldLayout = codValidationFieldLayout;
+	public void setCodRequiredFieldLayout(Long codRequiredFieldLayout) {
+		this.codRequiredFieldLayout = codRequiredFieldLayout;
 	}
 
 	public String getCancellationDependent() {
