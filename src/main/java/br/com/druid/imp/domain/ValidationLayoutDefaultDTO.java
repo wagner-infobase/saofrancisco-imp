@@ -39,6 +39,4 @@ public class ValidationLayoutDefaultDTO {
 	public void setValidDomain(String validDomain) {
 		this.validDomain = validDomain;
 	}
-	
-	
 }

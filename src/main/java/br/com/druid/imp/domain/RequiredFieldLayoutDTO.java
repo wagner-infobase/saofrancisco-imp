@@ -1,7 +1,7 @@
 package br.com.druid.imp.domain;
 
 public class RequiredFieldLayoutDTO {
-	
+
 	private Long codValidationFieldLayout;		
 	private Long codFieldLayoutDefault;
 	private String inclusionDependent;
@@ -105,6 +105,7 @@ public class RequiredFieldLayoutDTO {
 
 	public void setCriticalSibFieldId(Long criticalSibFieldId) {
 		this.criticalSibFieldId = criticalSibFieldId;
-	}
 
+	}	
+	
 }
