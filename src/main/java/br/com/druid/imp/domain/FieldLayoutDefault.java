@@ -59,6 +59,13 @@ public class FieldLayoutDefault implements Serializable {
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name="DT_INCLUSAO")
 	private Date includeDate;
+	
+	@Column(name="VALIDA_SIB")
+	private String validSib;
+	
+	@Column(name="VALIDA_DOMINIO")
+	private String validDomain;	
+	
 
 	public Long getId() {
 		return id;
@@ -148,4 +155,20 @@ public class FieldLayoutDefault implements Serializable {
 		this.includeDate = includeDate;
 	}
 
+	public String getValidSib() {
+		return validSib;
+	}
+
+	public void setValidSib(String validSib) {
+		this.validSib = validSib;
+	}
+
+	public String getValidDomain() {
+		return validDomain;
+	}
+
+	public void setValidDomain(String validDomain) {
+		this.validDomain = validDomain;
+	}
+	
 }
