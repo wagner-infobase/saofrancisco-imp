@@ -5,6 +5,8 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -19,6 +21,7 @@ public class FileImport implements Serializable  {
 	
 	@Id
 	@SequenceGenerator(name="ARQUIVO_IMPORTACAO_ID_GENERATOR", sequenceName="SQ_ARQUIVO_IMPORTACAO")
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="ARQUIVO_IMPORTACAO_ID_GENERATOR")
 	@Column(name="COD_ARQUIVO_IMPORTACAO")
 	private Long id;
 
