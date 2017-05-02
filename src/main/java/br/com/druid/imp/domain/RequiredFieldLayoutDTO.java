@@ -16,6 +16,8 @@ public class RequiredFieldLayoutDTO {
 	private String rectificationHolder;
 	private Long rectificationField;	
 	
+	private Long criticalSibFieldId;
+	
 	public RequiredFieldLayoutDTO(){}
 
 	public Long getCodValidationFieldLayout() {
@@ -95,6 +97,15 @@ public class RequiredFieldLayoutDTO {
 	}
 	public void setRectificationField(Long rectificationField) {
 		this.rectificationField = rectificationField;
+	}
+
+	public Long getCriticalSibFieldId() {
+		return criticalSibFieldId;
+	}
+
+	public void setCriticalSibFieldId(Long criticalSibFieldId) {
+		this.criticalSibFieldId = criticalSibFieldId;
 	}	
+	
 
 }
