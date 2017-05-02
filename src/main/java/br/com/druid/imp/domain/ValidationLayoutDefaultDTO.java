@@ -5,6 +5,8 @@ import java.util.List;
 public class ValidationLayoutDefaultDTO {
 	
 	private Long codLayoutDefault;	
+	private String validSib;
+	private String validDomain;	
 	private List<RequiredFieldLayoutDTO> validfieldlayout;
 	
 	public ValidationLayoutDefaultDTO(){}
@@ -22,5 +24,21 @@ public class ValidationLayoutDefaultDTO {
 		this.validfieldlayout = validfieldlayout;
 	}
 
+	public String getValidSib() {
+		return validSib;
+	}
+
+	public void setValidSib(String validSib) {
+		this.validSib = validSib;
+	}
+
+	public String getValidDomain() {
+		return validDomain;
+	}
+
+	public void setValidDomain(String validDomain) {
+		this.validDomain = validDomain;
+	}
+	
 	
 }
