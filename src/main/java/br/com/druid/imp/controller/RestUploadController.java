@@ -80,6 +80,7 @@ public class RestUploadController {
             fileImport.setLink(returnLink);
             fileImport.setName(uploadedFileName);
             fileImport.setIncludeDate(new Date());
+            fileImport.setStatus("1");
             
             fileImportRepository.save(fileImport);
 			
