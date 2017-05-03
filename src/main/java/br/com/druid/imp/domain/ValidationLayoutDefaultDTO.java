@@ -21,5 +21,4 @@ public class ValidationLayoutDefaultDTO {
 	public void setValidfieldlayout(List<RequiredFieldLayoutDTO> validfieldlayout) {
 		this.validfieldlayout = validfieldlayout;
 	}
-
 }

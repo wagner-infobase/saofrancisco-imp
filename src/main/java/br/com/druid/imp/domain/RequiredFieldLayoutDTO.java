@@ -17,7 +17,7 @@ public class RequiredFieldLayoutDTO {
 	private Long rectificationField;	
 	
 	private Long criticalSibFieldId;
-
+	
 	public RequiredFieldLayoutDTO(){}
 
 	public Long getCodValidationFieldLayout() {
