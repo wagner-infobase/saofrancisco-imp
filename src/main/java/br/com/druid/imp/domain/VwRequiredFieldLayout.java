@@ -13,7 +13,7 @@ import javax.persistence.Table;
  * 
  */
 @Entity
-@Table(name="VW_OBRIGACAO_CAMPO_LAYOUT")
+@Table(name="VW_OBRIGATORIO_CAMPO_LAYOUT")
 @NamedQuery(name="VwRequiredFieldLayout.findAll", query="SELECT v FROM VwRequiredFieldLayout v")
 public class VwRequiredFieldLayout implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -70,12 +70,15 @@ public class VwRequiredFieldLayout implements Serializable {
 
 	@Column(name="OBRIGATORIO_CAMPO_ID")
 	private Long requiredFieldId;
+	
+	@Column(name="RETIFICACAO_CAMPO")
+	private Long RectificationField;	
 
 	public VwRequiredFieldLayout() {
 	}
 
 	public String getActive() {
-		return this.active;
+		return active;
 	}
 
 	public void setActive(String active) {
@@ -83,7 +86,7 @@ public class VwRequiredFieldLayout implements Serializable {
 	}
 
 	public Long getFieldLayoutId() {
-		return this.fieldLayoutId;
+		return fieldLayoutId;
 	}
 
 	public void setFieldLayoutId(Long fieldLayoutId) {
@@ -91,7 +94,7 @@ public class VwRequiredFieldLayout implements Serializable {
 	}
 
 	public String getDescriptionField() {
-		return this.descriptionField;
+		return descriptionField;
 	}
 
 	public void setDescriptionField(String descriptionField) {
@@ -99,7 +102,7 @@ public class VwRequiredFieldLayout implements Serializable {
 	}
 
 	public Long getId() {
-		return this.id;
+		return id;
 	}
 
 	public void setId(Long id) {
@@ -107,7 +110,7 @@ public class VwRequiredFieldLayout implements Serializable {
 	}
 
 	public Long getLayoutId() {
-		return this.layoutId;
+		return layoutId;
 	}
 
 	public void setLayoutId(Long layoutId) {
@@ -115,7 +118,7 @@ public class VwRequiredFieldLayout implements Serializable {
 	}
 
 	public String getNameLayout() {
-		return this.nameLayout;
+		return nameLayout;
 	}
 
 	public void setNameLayout(String nameLayout) {
@@ -123,99 +126,108 @@ public class VwRequiredFieldLayout implements Serializable {
 	}
 
 	public Integer getNumberField() {
-		return this.numberField;
+		return numberField;
 	}
 
 	public void setNumberField(Integer numberField) {
 		this.numberField = numberField;
 	}
 
-	public String getforcesDepenCancellation() {
-		return this.forcesDepenCancellation;
+	public String getForcesDepenCancellation() {
+		return forcesDepenCancellation;
 	}
 
-	public void setforcesDepenCancellation(String forcesDepenCancellation) {
+	public void setForcesDepenCancellation(String forcesDepenCancellation) {
 		this.forcesDepenCancellation = forcesDepenCancellation;
 	}
 
-	public String getforcesDepenInclusion() {
-		return this.forcesDepenInclusion;
+	public String getForcesDepenInclusion() {
+		return forcesDepenInclusion;
 	}
 
-	public void setforcesDepenInclusion(String forcesDepenInclusion) {
+	public void setForcesDepenInclusion(String forcesDepenInclusion) {
 		this.forcesDepenInclusion = forcesDepenInclusion;
 	}
 
-	public String getforcesDepenContractualChange() {
-		return this.forcesDepenContractualChange;
+	public String getForcesDepenContractualChange() {
+		return forcesDepenContractualChange;
 	}
 
-	public void setforcesDepenContractualChange(String forcesDepenContractualChange) {
+	public void setForcesDepenContractualChange(String forcesDepenContractualChange) {
 		this.forcesDepenContractualChange = forcesDepenContractualChange;
 	}
 
-	public String getforcesDepenReactivation() {
-		return this.forcesDepenReactivation;
+	public String getForcesDepenReactivation() {
+		return forcesDepenReactivation;
 	}
 
-	public void setforcesDepenReactivation(String forcesDepenReactivation) {
+	public void setForcesDepenReactivation(String forcesDepenReactivation) {
 		this.forcesDepenReactivation = forcesDepenReactivation;
 	}
 
-	public String getforcesDepenRectification() {
-		return this.forcesDepenRectification;
+	public String getForcesDepenRectification() {
+		return forcesDepenRectification;
 	}
 
-	public void setforcesDepenRectification(String forcesDepenRectification) {
+	public void setForcesDepenRectification(String forcesDepenRectification) {
 		this.forcesDepenRectification = forcesDepenRectification;
 	}
 
-	public String getforcesHolderCancellation() {
-		return this.forcesHolderCancellation;
+	public String getForcesHolderCancellation() {
+		return forcesHolderCancellation;
 	}
 
-	public void setforcesHolderCancellation(String forcesHolderCancellation) {
+	public void setForcesHolderCancellation(String forcesHolderCancellation) {
 		this.forcesHolderCancellation = forcesHolderCancellation;
 	}
 
-	public String getforcesHolderInclusion() {
-		return this.forcesHolderInclusion;
+	public String getForcesHolderInclusion() {
+		return forcesHolderInclusion;
 	}
 
-	public void setforcesHolderInclusion(String forcesHolderInclusion) {
+	public void setForcesHolderInclusion(String forcesHolderInclusion) {
 		this.forcesHolderInclusion = forcesHolderInclusion;
 	}
 
-	public String getforcesHolderContractualChange() {
-		return this.forcesHolderContractualChange;
+	public String getForcesHolderContractualChange() {
+		return forcesHolderContractualChange;
 	}
 
-	public void setforcesHolderContractualChange(String forcesHolderContractualChange) {
+	public void setForcesHolderContractualChange(String forcesHolderContractualChange) {
 		this.forcesHolderContractualChange = forcesHolderContractualChange;
 	}
 
-	public String getforcesHolderReactivation() {
-		return this.forcesHolderReactivation;
+	public String getForcesHolderReactivation() {
+		return forcesHolderReactivation;
 	}
 
-	public void setforcesHolderReactivation(String forcesHolderReactivation) {
+	public void setForcesHolderReactivation(String forcesHolderReactivation) {
 		this.forcesHolderReactivation = forcesHolderReactivation;
 	}
 
-	public String getforcesHolderRectification() {
-		return this.forcesHolderRectification;
+	public String getForcesHolderRectification() {
+		return forcesHolderRectification;
 	}
 
-	public void setforcesHolderRectification(String forcesHolderRectification) {
+	public void setForcesHolderRectification(String forcesHolderRectification) {
 		this.forcesHolderRectification = forcesHolderRectification;
 	}
 
 	public Long getRequiredFieldId() {
-		return this.requiredFieldId;
+		return requiredFieldId;
 	}
 
 	public void setRequiredFieldId(Long requiredFieldId) {
 		this.requiredFieldId = requiredFieldId;
 	}
+
+	public Long getRectificationField() {
+		return RectificationField;
+	}
+
+	public void setRectificationField(Long rectificationField) {
+		RectificationField = rectificationField;
+	}
+	
 
 }

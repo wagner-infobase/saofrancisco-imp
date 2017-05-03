@@ -66,7 +66,6 @@ public class FieldLayoutDefault implements Serializable {
 	@Column(name="VALIDA_DOMINIO")
 	private String validDomain;	
 	
-
 	public Long getId() {
 		return id;
 	}
