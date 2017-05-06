@@ -43,10 +43,9 @@ public class LayoutDefault implements Serializable {
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name="DT_INCLUSAO")
 	private Date includeDate;
-	
+
 	@Column(name="VALIDACAO")
 	private String validation;
-	
 	
 	public Long getId() {
 		return id;
@@ -87,6 +86,7 @@ public class LayoutDefault implements Serializable {
 	public void setStatus(String status) {
 		this.status = status;
 	}
+
 
 	public String getValidation() {
 		return validation;

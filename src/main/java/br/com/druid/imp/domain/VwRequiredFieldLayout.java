@@ -70,15 +70,16 @@ public class VwRequiredFieldLayout implements Serializable {
 
 	@Column(name="OBRIGATORIO_CAMPO_ID")
 	private Long requiredFieldId;
-	
+
 	@Column(name="RETIFICACAO_CAMPO")
 	private Long RectificationField;	
+
 
 	public VwRequiredFieldLayout() {
 	}
 
 	public String getActive() {
-		return active;
+		return this.active;
 	}
 
 	public void setActive(String active) {
@@ -86,7 +87,7 @@ public class VwRequiredFieldLayout implements Serializable {
 	}
 
 	public Long getFieldLayoutId() {
-		return fieldLayoutId;
+		return this.fieldLayoutId;
 	}
 
 	public void setFieldLayoutId(Long fieldLayoutId) {
@@ -94,7 +95,7 @@ public class VwRequiredFieldLayout implements Serializable {
 	}
 
 	public String getDescriptionField() {
-		return descriptionField;
+		return this.descriptionField;
 	}
 
 	public void setDescriptionField(String descriptionField) {
@@ -102,7 +103,7 @@ public class VwRequiredFieldLayout implements Serializable {
 	}
 
 	public Long getId() {
-		return id;
+		return this.id;
 	}
 
 	public void setId(Long id) {
@@ -110,7 +111,7 @@ public class VwRequiredFieldLayout implements Serializable {
 	}
 
 	public Long getLayoutId() {
-		return layoutId;
+		return this.layoutId;
 	}
 
 	public void setLayoutId(Long layoutId) {
@@ -118,7 +119,7 @@ public class VwRequiredFieldLayout implements Serializable {
 	}
 
 	public String getNameLayout() {
-		return nameLayout;
+		return this.nameLayout;
 	}
 
 	public void setNameLayout(String nameLayout) {
@@ -126,7 +127,7 @@ public class VwRequiredFieldLayout implements Serializable {
 	}
 
 	public Integer getNumberField() {
-		return numberField;
+		return this.numberField;
 	}
 
 	public void setNumberField(Integer numberField) {
@@ -214,7 +215,7 @@ public class VwRequiredFieldLayout implements Serializable {
 	}
 
 	public Long getRequiredFieldId() {
-		return requiredFieldId;
+		return this.requiredFieldId;
 	}
 
 	public void setRequiredFieldId(Long requiredFieldId) {
@@ -228,6 +229,5 @@ public class VwRequiredFieldLayout implements Serializable {
 	public void setRectificationField(Long rectificationField) {
 		RectificationField = rectificationField;
 	}
-	
 
 }
