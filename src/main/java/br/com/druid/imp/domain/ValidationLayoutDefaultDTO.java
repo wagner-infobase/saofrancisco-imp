@@ -40,4 +40,5 @@ public class ValidationLayoutDefaultDTO {
 		this.validDomain = validDomain;
 	}
 	
+	
 }
